@@ -1,10 +1,15 @@
 package org.example;
 
+import java.util.NoSuchElementException;
 import java.util.Stack;
 
 public class TqsStack<T> {
     Stack<T> istack;
     int bound=-1;
+
+    public TqsStack() {
+        this.istack = new Stack<>();
+    }
 
     public boolean isEmpty(){
         if (istack.isEmpty())
@@ -13,18 +18,24 @@ public class TqsStack<T> {
     }
 
     public void push(T element){
-
+        istack.push(element);
     }
     public T pop(){
-        return null;
+        if(istack.isEmpty()){
+            throw new NoSuchElementException();
+        }
+        return istack.pop();
     }
 
     public T peek(){
-        return null;
+        if(istack.isEmpty()){
+            throw new NoSuchElementException();
+        }
+        return istack.peek();
     }
 
     public int size(){
-        return -1;
+        return istack.size();
     }
 
     public void setBound(int bound) {

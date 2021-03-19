@@ -1,32 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: org.example.TqsStackTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 6, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in org.example.TqsStackTest
-pop(org.example.TqsStackTest)  Time elapsed: 0.003 s  <<< ERROR!
+Tests run: 8, Failures: 3, Errors: 5, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in org.example.TqsStackTest
+pop(org.example.TqsStackTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException
-	at org.example.TqsStackTest.pop(TqsStackTest.java:44)
+	at org.example.TqsStackTest.pop(TqsStackTest.java:43)
 
 peek(org.example.TqsStackTest)  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException
-	at org.example.TqsStackTest.peek(TqsStackTest.java:55)
+	at org.example.TqsStackTest.peek(TqsStackTest.java:49)
 
-push(org.example.TqsStackTest)  Time elapsed: 0 s  <<< ERROR!
+push(org.example.TqsStackTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException
-	at org.example.TqsStackTest.push(TqsStackTest.java:32)
+	at org.example.TqsStackTest.push(TqsStackTest.java:80)
 
-size(org.example.TqsStackTest)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NullPointerException
-	at org.example.TqsStackTest.size(TqsStackTest.java:63)
+size(org.example.TqsStackTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<-1>
+	at org.example.TqsStackTest.size(TqsStackTest.java:36)
 
-popEmpty(org.example.TqsStackTest)  Time elapsed: 0 s  <<< FAILURE!
+popEmpty(org.example.TqsStackTest)  Time elapsed: 0.002 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.util.NoSuchElementException to be thrown, but nothing was thrown.
-	at org.example.TqsStackTest.popEmpty(TqsStackTest.java:50)
+	at org.example.TqsStackTest.popEmpty(TqsStackTest.java:67)
 
-Npops_Nsize(org.example.TqsStackTest)  Time elapsed: 0 s  <<< ERROR!
+Npops_Nsize(org.example.TqsStackTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException
-	at org.example.TqsStackTest.Npops_Nsize(TqsStackTest.java:68)
+	at org.example.TqsStackTest.Npops_Nsize(TqsStackTest.java:56)
 
-isEmpty(org.example.TqsStackTest)  Time elapsed: 0 s  <<< ERROR!
+peekEmpty(org.example.TqsStackTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.util.NoSuchElementException to be thrown, but nothing was thrown.
+	at org.example.TqsStackTest.peekEmpty(TqsStackTest.java:74)
+
+isEmpty(org.example.TqsStackTest)  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException
-	at org.example.TqsStackTest.isEmpty(TqsStackTest.java:27)
+	at org.example.TqsStackTest.isEmpty(TqsStackTest.java:28)
 

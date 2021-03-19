@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.TqsStackTest" time="0.008" tests="7" errors="6" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.TqsStackTest" time="0.01" tests="8" errors="5" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Lenovo\Desktop\IES\Projeto\spring_security\TQS_P1\target\test-classes;C:\Users\Lenovo\Desktop\IES\Projeto\spring_security\TQS_P1\target\classes;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\Lenovo\Desktop\TQS\TQS_LabClasses\Lab1\TQS_P1\target\test-classes;C:\Users\Lenovo\Desktop\TQS\TQS_LabClasses\Lab1\TQS_P1\target\classes;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin"/>
-    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire5759897203576517999\surefirebooter3811574007864744503.jar C:\Users\Lenovo\AppData\Local\Temp\surefire5759897203576517999 2021-03-15T19-48-20_559-jvmRun1 surefire3811440655286848964tmp surefire_08544388564537300958tmp"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire10676371768560065805\surefirebooter255340963049981344.jar C:\Users\Lenovo\AppData\Local\Temp\surefire10676371768560065805 2021-03-19T19-26-10_740-jvmRun1 surefire11567183362608020136tmp surefire_03748943602824730089tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Lenovo\Desktop\IES\Projeto\spring_security\TQS_P1\target\test-classes;C:\Users\Lenovo\Desktop\IES\Projeto\spring_security\TQS_P1\target\classes;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Lenovo\Desktop\TQS\TQS_LabClasses\Lab1\TQS_P1\target\test-classes;C:\Users\Lenovo\Desktop\TQS\TQS_LabClasses\Lab1\TQS_P1\target\classes;C:\Users\Lenovo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Lenovo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Lenovo\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Lenovo"/>
     <property name="user.language" value="en"/>
@@ -27,13 +27,13 @@
     <property name="java.version.date" value="2019-07-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.4"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Lenovo\Desktop\IES\Projeto\spring_security\TQS_P1"/>
+    <property name="basedir" value="C:\Users\Lenovo\Desktop\TQS\TQS_LabClasses\Lab1\TQS_P1"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire5759897203576517999\surefirebooter3811574007864744503.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire10676371768560065805\surefirebooter255340963049981344.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.4+10-LTS"/>
@@ -48,7 +48,7 @@
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
     <property name="java.version" value="11.0.4"/>
-    <property name="user.dir" value="C:\Users\Lenovo\Desktop\IES\Projeto\spring_security\TQS_P1"/>
+    <property name="user.dir" value="C:\Users\Lenovo\Desktop\TQS\TQS_LabClasses\Lab1\TQS_P1"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
@@ -60,39 +60,44 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="pop" classname="org.example.TqsStackTest" time="0.003">
+  <testcase name="pop" classname="org.example.TqsStackTest" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.example.TqsStackTest.pop(TqsStackTest.java:44)
+	at org.example.TqsStackTest.pop(TqsStackTest.java:43)
 </error>
   </testcase>
   <testcase name="peek" classname="org.example.TqsStackTest" time="0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.example.TqsStackTest.peek(TqsStackTest.java:55)
+	at org.example.TqsStackTest.peek(TqsStackTest.java:49)
 </error>
   </testcase>
-  <testcase name="push" classname="org.example.TqsStackTest" time="0">
+  <testcase name="push" classname="org.example.TqsStackTest" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.example.TqsStackTest.push(TqsStackTest.java:32)
+	at org.example.TqsStackTest.push(TqsStackTest.java:80)
 </error>
   </testcase>
   <testcase name="size" classname="org.example.TqsStackTest" time="0">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.example.TqsStackTest.size(TqsStackTest.java:63)
-</error>
+    <failure message="expected:&lt;0&gt; but was:&lt;-1&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<0> but was:<-1>
+	at org.example.TqsStackTest.size(TqsStackTest.java:36)
+]]></failure>
   </testcase>
-  <testcase name="popEmpty" classname="org.example.TqsStackTest" time="0">
+  <testcase name="popEmpty" classname="org.example.TqsStackTest" time="0.002">
     <failure message="Expected java.util.NoSuchElementException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected java.util.NoSuchElementException to be thrown, but nothing was thrown.
-	at org.example.TqsStackTest.popEmpty(TqsStackTest.java:50)
+	at org.example.TqsStackTest.popEmpty(TqsStackTest.java:67)
 </failure>
   </testcase>
-  <testcase name="Npops_Nsize" classname="org.example.TqsStackTest" time="0">
+  <testcase name="Npops_Nsize" classname="org.example.TqsStackTest" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.example.TqsStackTest.Npops_Nsize(TqsStackTest.java:68)
+	at org.example.TqsStackTest.Npops_Nsize(TqsStackTest.java:56)
 </error>
   </testcase>
-  <testcase name="isEmpty" classname="org.example.TqsStackTest" time="0">
+  <testcase name="peekEmpty" classname="org.example.TqsStackTest" time="0.001">
+    <failure message="Expected java.util.NoSuchElementException to be thrown, but nothing was thrown." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected java.util.NoSuchElementException to be thrown, but nothing was thrown.
+	at org.example.TqsStackTest.peekEmpty(TqsStackTest.java:74)
+</failure>
+  </testcase>
+  <testcase name="isEmpty" classname="org.example.TqsStackTest" time="0.001">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.example.TqsStackTest.isEmpty(TqsStackTest.java:27)
+	at org.example.TqsStackTest.isEmpty(TqsStackTest.java:28)
 </error>
   </testcase>
 </testsuite>
