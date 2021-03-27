@@ -38,7 +38,11 @@ public class AddressResolverIT {
         assertThrows(IndexOutOfBoundsException.class, () -> {
             resolver.findAddressForLocation(112, 224);;
         });
+    }
 
+    @Test
+    public void isNullUrl() throws IOException {
+        assertThrows(NullPointerException.class, () -> httpClient.get(null));
     }
 
 }
