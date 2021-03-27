@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/TQS_P2.iml" filepath="$PROJECT_DIR$/.idea/TQS_P2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ua_tqs_gs20-master/gs-employee-mngr/employee-mngr.iml" filepath="$PROJECT_DIR$/ua_tqs_gs20-master/gs-employee-mngr/employee-mngr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ua_tqs_gs20-master/gs-mockForHttpClient/gs-MockForHttpClient.iml" filepath="$PROJECT_DIR$/ua_tqs_gs20-master/gs-mockForHttpClient/gs-MockForHttpClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ua_tqs_gs20-master/lab52CarsDemo/lab52carsdemo.iml" filepath="$PROJECT_DIR$/ua_tqs_gs20-master/lab52CarsDemo/lab52carsdemo.iml" />
+    </modules>
+  </component>
+</project>
