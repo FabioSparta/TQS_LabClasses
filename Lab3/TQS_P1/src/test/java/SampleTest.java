@@ -19,9 +19,9 @@ class SampleTest {
     @BeforeEach
     void setUp() {
         //CHROME
-        System.setProperty("webdriver.chrome.driver", "/opt/webdriver/bin/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "/opt/webdriver/bin/chromedriver");
         //ChromeOptions options = new ChromeOptions().addArguments("browser.startup.homepage", "https://www.ua.pt");
-          browser = new ChromeDriver();
+        browser = new ChromeDriver();
 
         //FIREFOX
          // System.setProperty("webdriver.gecko.driver", "/opt/webdriver/bin/geckodriver");
