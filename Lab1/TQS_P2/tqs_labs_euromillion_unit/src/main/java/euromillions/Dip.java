@@ -19,10 +19,12 @@ public class Dip {
 
     private SetOfNaturals numbers;
     private SetOfNaturals starts;
+    private Random generator ;
 
     public Dip() {
         numbers = new SetOfNaturals();
         starts = new SetOfNaturals();
+        generator = new Random();
     }
 
     public Dip(int[] arrayOfNumbers, int[] arrayOfStarts) {
@@ -46,18 +48,17 @@ public class Dip {
     }
 
     public static Dip generateRandomDip() {
-        Random generator = new Random();
 
         Dip randomDip = new Dip();
         for (int i = 0; i < 5; ) {
-            int candidate = generator.nextInt(HIGHEST_NUMBER) + 1;
+            int candidate = randomDip.generator.nextInt(HIGHEST_NUMBER) + 1;
             if (!randomDip.getNumbersColl().contains(candidate)) {
                 randomDip.getNumbersColl().add(candidate);
                 i++;
             }
         }
         for (int i = 0; i < 2; ) {
-            int candidate = generator.nextInt(HIGHEST_STAR) + 1;
+            int candidate = randomDip.generator.nextInt(HIGHEST_STAR) + 1;
             if (!randomDip.getStarsColl().contains(candidate)) {
                 randomDip.getStarsColl().add(candidate);
                 i++;
