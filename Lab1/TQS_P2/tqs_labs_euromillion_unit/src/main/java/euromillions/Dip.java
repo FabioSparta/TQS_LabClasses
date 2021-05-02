@@ -50,20 +50,19 @@ public class Dip {
     public static Dip generateRandomDip() {
 
         Dip randomDip = new Dip();
-        for (int i = 0; i < 5; ) {
+        while(randomDip.numbers.size()<5){
             int candidate = randomDip.generator.nextInt(HIGHEST_NUMBER) + 1;
             if (!randomDip.getNumbersColl().contains(candidate)) {
                 randomDip.getNumbersColl().add(candidate);
-                i++;
             }
         }
-        for (int i = 0; i < 2; ) {
+        while (randomDip.starts.size()<2) {
             int candidate = randomDip.generator.nextInt(HIGHEST_STAR) + 1;
             if (!randomDip.getStarsColl().contains(candidate)) {
                 randomDip.getStarsColl().add(candidate);
-                i++;
             }
         }
+
         return randomDip;
     }
 
