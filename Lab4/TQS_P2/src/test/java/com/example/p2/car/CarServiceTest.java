@@ -45,28 +45,28 @@ class CarServiceTest {
 
 
     @Test
-    public void ifValidMaker_Model_CarShouldBeFound() {
+    public void whenValidMakerAndModel_thenCarShouldBeFound() {
         Car found = carService.getCarByMakerAndModel("BMW","M3");
         assertThat(found.getMaker()).isEqualTo("BMW");
         assertThat(found.getModel()).isEqualTo("M3");
     }
 
     @Test
-    public void ifNotValidMaker_Model_CarShouldNotBeFound() {
+    public void whenNotValidMakerOrdModel_thenCarShouldNotBeFound() {
         Car car = carService.getCarByMakerAndModel("wrong","wrong");
         assertThat(car).isNull();
         Mockito.verify(carRepository, VerificationModeFactory.times(1)).findByMakerAndModel("wrong","wrong");
     }
 
     @Test
-    public void ifNotValidId_CarShouldNotBeFound() {
+    public void whenNotValidId_thenCarShouldNotBeFound() {
         Car car = carService.getCarById(-99L);
         Mockito.verify(carRepository,VerificationModeFactory.times(1)).findById(-99L);
         assertThat(car).isNull();
     }
 
     @Test
-    public void if3Cars_getAll_impliesReturn3Records() {
+    public void when3Cars_getAll_thenReturn3Records() {
         List<Car> allCars = carService.getAllCars();
         Mockito.verify(carRepository,VerificationModeFactory.times(1)).findAll();
         assertThat(allCars).hasSize(3)

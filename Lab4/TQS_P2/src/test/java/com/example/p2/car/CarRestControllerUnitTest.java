@@ -1,6 +1,5 @@
 package com.example.p2.car;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.mockito.internal.verification.VerificationModeFactory;
@@ -19,11 +18,12 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(CarRestController.class)
-class CarRestControllerTest {
+class CarRestControllerUnitTest {
 
     @Autowired
     private MockMvc mvc;
@@ -32,7 +32,7 @@ class CarRestControllerTest {
     private CarService service;
 
     @Test
-    public void whenPostCar_CreateCar() throws Exception{
+    public void whenPostCar_thenCreateCar() throws Exception{
         Car car1= new Car("BMW","M3");
         when(service.save(Mockito.any())).thenReturn(car1);
 
@@ -45,7 +45,7 @@ class CarRestControllerTest {
     }
 
     @Test
-    public void ifCars_GetCars_impliesReturnCarsJsonArray() throws Exception {
+    public void whenCars_GetCars_thenReturnCarsJsonArray() throws Exception {
         Car car1= new Car("BMW","M3");
         Car car2 = new Car("Audi","A8");
         Car car3= new Car("Mercedes","Benz");
@@ -61,5 +61,19 @@ class CarRestControllerTest {
                 .andExpect(jsonPath("$[2].maker", is(car3.getMaker())));
 
         verify(service, VerificationModeFactory.times(1)).getAllCars();
+    }
+
+    @Test
+    public void whenValidMakerAndName_thenReturnCar() throws Exception {
+        Car c1 = new Car("fiat", "500");
+
+        when(service.getCarByMakerAndModel("fiat","500")).thenReturn(c1);
+
+        mvc.perform(get("/api/car/fiat/500").contentType(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(jsonPath("$.maker", is("fiat")))
+                .andExpect(jsonPath("$.model", is("500")));
+
+        verify(service, times(1)).getCarByMakerAndModel(Mockito.anyString(),Mockito.anyString());
     }
 }

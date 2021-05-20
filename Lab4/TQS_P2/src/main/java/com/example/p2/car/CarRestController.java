@@ -24,4 +24,11 @@ public class CarRestController {
     public List<Car> getAllCars() {
         return carService.getAllCars();
     }
+
+    @GetMapping("/car/{maker}/{model}")
+    public ResponseEntity<Car> getCarDetails
+            (@PathVariable(value = "maker") String maker, @PathVariable(value = "model") String model) {
+        return new ResponseEntity<>(carService.getCarByMakerAndModel(maker,model),HttpStatus.OK);
+    }
+
 }
